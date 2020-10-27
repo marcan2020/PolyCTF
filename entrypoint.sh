@@ -32,6 +32,6 @@ if ! $(wp core is-installed --allow-root); then
    #wp plugin install https://downloads.wordpress.org/plugin/rsvpmaker.7.8.1.zip --activate --allow-root
 fi
 
-chown -R /var/www/html/
+chown -R www-data:www-data /var/www/html/
 
 exec "$@"
