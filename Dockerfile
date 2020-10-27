@@ -6,7 +6,7 @@ RUN curl https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.ph
 COPY ./entrypoint.sh /root/entrypoint.sh
 RUN chmod +x /root/entrypoint.sh
 
-COPY ./plugins/rsvpmaker.7.8.1.zip /tmp/
+COPY ./plugins/ /root/plugins/
 
 COPY ./secret.sh /bin/secret
 RUN chmod +x /bin/secret

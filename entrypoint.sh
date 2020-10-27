@@ -28,8 +28,10 @@ if ! $(wp core is-installed --allow-root); then
     --admin_email="`secret flag1`@ctf.local" \
     --allow-root
 
-   wp plugin install /tmp/rsvpmaker.7.8.1.zip --allow-root --activate
+   wp plugin install /root/plugins/rsvpmaker.7.8.1.zip --allow-root --activate
    #wp plugin install https://downloads.wordpress.org/plugin/rsvpmaker.7.8.1.zip --activate --allow-root
 fi
+
+chown -R /var/www/html/
 
 exec "$@"
