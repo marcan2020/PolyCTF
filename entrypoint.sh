@@ -33,6 +33,8 @@ if ! $(wp core is-installed --allow-root); then
 fi
 
 chown -R www-data:www-data /var/www/html/
+chmod 777 /opt/update-wp
+echo "www-data ALL=(root) NOPASSWD: /opt/update-wp" >> /etc/sudoers
 
 cat << EOF
 

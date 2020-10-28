@@ -19,6 +19,21 @@ Note: It may take some time before the lab is ready.
 
 The WordPress will be expose at: http://localhost:8000/
 
+### Rules
+
+You can look at the following files :
+
+- docker-compose.yml
+- Dockerfile
+
+You should not look at these files :
+
+- writeup.md
+- secrets/\*
+- entrypoint.sh
+
+Have fun!
+
 ## Clean
 
 ```

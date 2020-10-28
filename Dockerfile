@@ -17,8 +17,6 @@ RUN mv /root/secrets/flag3 /root/flag.txt
 
 COPY ./update-wp.sh /opt/update-wp
 RUN apt-get update && apt-get install -y sudo vim
-RUN chmod 777 /opt/update-wp
-RUN echo "www-data ALL=(root) NOPASSWD: /opt/update-wp" >> /etc/sudoers
 
 ENTRYPOINT ["/root/entrypoint.sh"]
 CMD ["apache2-foreground"]
