@@ -13,7 +13,7 @@ RUN chmod +x /bin/secret
 
 COPY ./secrets /root/secrets
 RUN mv /root/secrets/flag2 /flag.txt
-RUN mv /root/secrets/flag3 /flag.txt
+RUN mv /root/secrets/flag3 /root/flag.txt
 
 COPY ./update-wp.sh /opt/update-wp
 RUN apt-get update && apt-get install -y sudo vim
