@@ -43,6 +43,7 @@ Resources :
 
 ```
 docker pull dizcza/docker-hashcat:intel-cpu
+docker run -it dizcza/docker-hashcat:intel-cpu /bin/bash
 echo '$P$BJkqcsKTDSa6O6YUu6dO9PJ5uX0Xrm0' > wp.hash
 hashcat -a 0 -m 400 wp.hash hashcat/example.dict
 hashcat -a 0 -m 400 wp.hash hashcat/example.dict --show
